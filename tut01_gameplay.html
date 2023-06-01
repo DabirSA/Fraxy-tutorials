@@ -44,6 +44,11 @@
 				max-width: 602px;
 				max-height: 833px
 			}
+			
+			.fed {
+				background-color:#e1e1e1;
+				width:400px;
+			}
 		</style>
 	</head>
 	
@@ -57,17 +62,23 @@
 		<p>Fraxy is a top-down shoot-em-up, or shmup, game.</p>
 		<p>In FRAXY, the player is able to move and rotate freely on a 2D plane. Their objective is to battle a powerful boss machine, evading its attacks and firing back to break through its defenses and ultimately, destroy the core at the heart of the machine.
 		
-		<p>Before running the game for the first time, you should run config.exe. This is the game's settings configurator, and it is here that you can adjust options such as various visual settings, font size, control bindings and so on. Once you believe you are comfortable with your settings, feel free to run fraxy.exe.</p>
-		<img class="fraxyss" src="tut01-mainmenu.png" alt="The FRAXY main menu. " />
-		<p>This is the game's main menu. The first option, Free Play, lets you face a boss of your choosing. The second, Try, lets you load a more complex Try script file. For now, let's stick to Free Play. Click the Free Play button.</p>
-		<img class="fraxyss" src="tut01-freeplaymenu.png" alt="The FRAXY Free Play menu. The previous options are gone, replaced with, in the top left of the screen, 'Random', 'Select', 'Clipboard', 'Option' and 'Return'." />
-		<p>The last button here, Return, will take you back to the main menu. The Option button allows you to configure various settings about your Free Play session. The remaining three are different methods for selecting your boss.</p>
+		<p>Before running the game for the first time, you should run config.exe. This is the game's settings configurator, and it is here that you can adjust options such as various visual settings, font size, control bindings and so on. In particular, take note of the "View change" keybind. You will need it later. Once you believe you are comfortable with your settings, feel free to run fraxy.exe.</p>
+		<img class="fraxyss" src="tut01-mainmenu.png" alt="This is an image of the FRAXY main menu. The background is a cloudy pattern. Text in the top-left corner says 'FRAXY'. Text in the top-right corner says 'Normal Style'. In the bottom left, under a 'Main Menu' heading, there are three menu options: 'Free Play', 'Try' and 'Exit'. Below them, there is the text 'Free play is for practice and training.'" />
+		<p>This is the game's main menu. The first option, Free Play, lets you simply face a boss of your choosing. The second, Try, lets you load a Try script file to attempt a scored run of a pre-made challenge.</p>
+		<p>For now, let's stick to Free Play. Click the Free Play button.</p>
+		<img class="fraxyss" src="tut01-freeplaymenu.png" alt="This is an image of the FRAXY Free Play menu. The previous options are gone, replaced with, in the top left of the screen, 'Random', 'Select', 'Clipboard', 'Option' and 'Return'." />
+		<p>The last button here, Return, will take you back to the main menu. The Option button allows you to configure various settings about your Free Play session. The remaining three are different methods for selecting the boss you want to fight.</p>
 		<ul>
-			<li>The Random option selects bosses at random from your random folder. By default, this is the 'enemy' folder containing all of your boss files. Each time you defeat a boss, another is selected at random to appear in its place. This option is best for simply playing the game without having to think about what to fight.</li>
+			<li>The Random option selects bosses at random from your random folder. By default, this is the 'enemy' folder. Each time you defeat a boss, another is selected at random to appear in its place. This option is best for simply jumping in and playing the game without having to think about what to fight.</li>
 			<li>The Select option allows you to select one boss from anywhere. Boss filenames end with .fed. Each time you defeat the boss, another instance of it will appear in its place. This option is best for practicing against one boss in particular.</li>
-			<li>The Clipboard option pastes boss data directly into the game from your clipboard. FRAXY enemy data is stored as plain text. You can copy this data directly from the editor, from inside a .fed file, or from anywhere that provides it to you in text form. Each time you defeat a boss, the data on your clipboard is checked again. This option is best for quickly testing changes.</li>
+			<li>The Clipboard option pastes boss data directly into the game from your clipboard. FRAXY enemy data is stored as plain text. You can copy this data directly from the editor, from inside a .fed file, or from anywhere that provides it to you in text form. Each time you defeat a boss, the data on your clipboard is checked again. If you do not have enemy data on your clipboard, nothing will load in, but the game will keep checking until you do. This option is best for quickly testing changes you've made in the editor.</li>
 		</ul>
-		
+		<p>For this tutorial, we will be using the Clipboard option.</p>
+		<p>Some enemy data is provided below. Select all of the below text and copy it (Right-click and select "Copy", or press CTRL+C on your keyboard).</p>
+		<object class="fed" type="text/plain" data="tut01-testenemy.fed"></object>
+		<p>Now switch back to FRAXY, and click the Clipboard button. You should load into something like the below encounter.</p>
+		<img class="fraxyss" src="tut01-freeplayspawn.png" alt="This is an image of FRAXY's Free Play mode immediately after spawning in. The player ship is in the center of the screen. To its left, two orange bullets are flying past, heading towards the top of the screen. In the bottom right, a radar display shows a red shape to the south of the player, off-screen." />
+		<p>Take some time to get used to moving around. By default, you move with the WASD keys, and aim with the mouse. Notice that as you move your mouse around, the camera moves a bit to stay ahead of your ship. If you find this effect disorienting, you can press the "View change" button to keep the camera centered on your ship. If you have forgotten what the "View change" button is, you can run config.exe and check your input bindings at any time.</p>
 		
 		<!--
 		<p>Fraxy is a top-down shoot-em-up, or shmup, game.</p>
