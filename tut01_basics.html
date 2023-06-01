@@ -5,6 +5,33 @@
 		<meta http-equiv="default-style" content="fraxy.css">
 		<link rel="stylesheet" type="text/css" href="fraxy.css">
 		<title>FRAXY Tutorials - 01 - Basics</title>
+		
+		<style>
+			.map.bg {
+				position:relative;
+				background-size: 100% 100%;
+			}
+			
+			.map.hotspot {
+				position:absolute;
+				border: 1px solid red;
+				background-color: transparent;
+			}
+			.map.hotspot:hover {
+				border: 1px solid blue;
+			}
+			.map.hotspot:active{
+				border: 1px solid yellow;
+			}
+			
+			.map.infobox {
+				display:none
+			}
+			
+			.map.infobox:target {
+				display:initial
+			}
+		</style>
 	</head>
 	
 	<body class="contents_main">
@@ -19,7 +46,12 @@
 		<p>Bosses, destructible parts, shoot core</p>
 		
 		<div class="style_center">- The Editor -</div>
-		<!-- Figure out the interactive map thing -->
+			
+			<div class="map bg" style="background-image: url('tut01-editor-default.png'); width:1102px; height:940px">
+				<a class="map hotspot" style="left: 0.36%; top: 7.55%; width:4.63%; height: 6.91%" href="#edt-saveload"></a>
+				
+			</div>
+		
 		<p></p>
 		
 		<div class="style_center">- Adding parts -</div>
