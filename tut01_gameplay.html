@@ -55,7 +55,8 @@
 	<body class="contents_main">
 		<div class="categorytitle">Gameplay</div>
 		<p>This is the first in a series of tutorials about FRAXY. This tutorial covers basic FRAXY gameplay.</p>
-		<p>Please note that virtually every element of this gameplay is at liberty to be modified by the designer of the boss you are facing. This tutorial describes unmodified gameplay only.</p>
+		<p>By the end of this tutorial, you should understand how to move, aim, shoot, and how to choose a boss to fight.</p>
+		<p>Please note that virtually every element of this gameplay is at liberty to be modified by the designer of the boss you are facing or the Try you are playing. If a boss creator wants to make it so that firing your weapons destroys you and boosting slows you down, they can do that. This tutorial describes unmodified gameplay only.</p>
 		<br />
 		<div class="style_center">- Basic Gameplay -</div>
 		<br />
@@ -80,7 +81,8 @@
 		<img class="fraxyss" src="tut01-freeplay-spawn.png" alt="This is an image of FRAXY's Free Play mode immediately after spawning in. The player ship is in the center of the screen. To its left, two orange bullets are flying past, heading towards the top of the screen. In the bottom right, a radar display shows a red shape to the south of the player, off-screen." />
 		<p>You will notice that the boss is firing its weapons from off-screen. This enemy simply fires straight forwards, so you can ignore it for now.</p>
 		<p>You will also notice that the text which appeared when the boss spawned referred to it as "Rank 1". "Rank" is the difficulty of the boss, and it goes from 1 (easiest) to 100 (hardest). As Rank increases, bosses move more quickly and their attacks become more dangerous.</p>
-		<p>Take some time to get used to moving around and shooting. By default, you move with the WASD keys, and aim with the mouse. Notice that as you move your mouse around, the camera moves a bit to stay ahead of your ship. If you find this effect disorienting, you can press the "View change" button to keep the camera centered on your ship. If you have forgotten what the "View change" button is, you can run config.exe and check your input bindings at any time.</p>
+		<p>Take some time to get used to moving around and shooting. By default, you move with the WASD keys, and aim with the mouse. Left-click to fire your weapon, and right-click to boost. Boosting gives you a burst of speed when you first activate it, but you don't have to keep pressing it - just holding it will let you move more quickly.</p>
+		<p>Notice that as you move your mouse around, the camera moves a bit to stay ahead of your ship. If you find this effect disorienting, you can press the "View change" button to keep the camera centered on your ship. If you have forgotten what the "View change" button is, you can run config.exe and check your input bindings at any time.</p>
 		<p>In the top left, you can see your equipment slots. By default, your first slot contains the Bullet weapon, and your second slot contains Vulcan. Switch between these weapons, and observe the difference in their behaviour. You have five slots, which can contain both weapons and support equipment. We will learn how to change the contents of your equipment slots later.</p>
 		<p>It is time for us to approach and engage the boss. In the bottom-right of your screen, you can see a radar display. The box shape in the radar shows the area you are looking at, and the red shape indicates the location of an enemy. Move towards that red shape now. You should encounter something like this.</p>
 		<img class="fraxyss" src="tut01-freeplay-meetboss.png" alt="This is an image of FRAXY's Free Play mode. The player ship is in the center of the screen. Immediately below and to the right of the player, there is a boss enemy. The boss consists of a large circular core with a blue orb at its center, with a long rigid arm extending out from each side of it. One arm has a gun at the end, while the other has a laser emitter at the end, both pointing straight forwards. They are far too far apart to present any danger to the player." />
@@ -101,8 +103,11 @@
 		<p>Every boss is built around a core. Some may include multiple cores, or have special cores which allow parts to break off and act independently, but destroying cores is always your main objective.</p>
 		<p>Destroy the core.</p>
 		<img class="fraxyss" src="tut01-freeplay-bossdying.png" alt="This is an image of FRAXY's Free Play mode. The core has been destroyed, indicated by explosions all over it." /><br>
+		<p>The boss has now been destroyed.</p>
 		<img class="fraxyss" src="tut01-freeplay-bossdead.png" alt="This is an image of FRAXY's Free Play mode. The boss is now gone. In its place is a glowing mass of energy with three arms. Each arm has an orb at the end. One orb is red, and contains the letter P. One is green, and contains the letter £E. One is blue, and contains the letter R." />
-		<p>The boss has now been destroyed. The destroyed core has dropped an item. The red P increases the level of your currently-equipped weapon, to a maximum of 5. The green E increases your energy level, again to a maximum of 5. The blue R increases your energy regeneration rate, to a maximum level of 5. Alternatively, you can fly into the energy mass at the center to gain a temporary boost to all of your weapons, referred to as "Over soll power".</p>
+		<p>The destroyed core has dropped an item. This item presents you with a choice of three powerup items. The red P increases the level of your currently-equipped weapon, to a maximum of 5. The green E increases your energy level, again to a maximum of 5. The blue R increases your energy regeneration rate, to a maximum level of 5.</p>
+		<p>Fly into the powerup you prefer to collect it. Alternatively, you can fly into the energy mass at the center and remain there for a few seconds to gain a temporary powerup referred to as "Over soll power". Over soll power boosts the level of all of your weapons for a few seconds, and can even boost them beyond the normal maximum level of 5.</p>
+		<p>
 		<p>If you have not copied anything else onto your clipboard since spawning the boss, a second copy of it should have spawned. If it has not, copy the boss data above again and return to the game.</p>
 		<p>Notice that the Rank of this boss is slightly higher than the previous one. It is now firing slightly more quickly than before. If it could move, it would also move around slightly faster.</p>
 		<p>Continue destroying this boss as long as you need to to grasp the game's controls. When you are done, press the Escape key.</p>
@@ -110,16 +115,11 @@
 		<p>This is the Free Play pause menu. Gameplay is paused while on this menu. Pressing "Continue" resumes play. Pressing "Return to main menu" will return you to the main menu, leaving the boss active in the background. Pressing "Exit" quits the game entirely.</p>
 		<p>"Player status" lets you modify your weapons and their levels, as well as your energy and regeneration levels, and even select a different ship type. Different ships have different stats, as well as slightly different weapon behaviours. In particular, the special 'BulletHell' ship requires no energy to fire any of its weapons, and receives a different set of items when it destroys a core, but it is destroyed instantly on taking any amount of damage.</p>
 		<p>Pressing "Clean up" will do nothing at first. However, when gameplay resumes, or when you return to the main menu, the boss will immediately self-destruct. If you have resumed gameplay, a new boss will immediately spawn if possible. Destroying a boss this way does not make it drop an item, or increase your Rank.</p>
-		
-		<!--
-		<p>Fraxy is a top-down shoot-em-up, or shmup, game.</p>
-		<p>In FRAXY, the player is able to move and rotate freely on a 2D plane. The player also has access to a boost button, which provides a burst of speed when pressed and makes their movement faster while held.</p>
-		<p>The player has an energy meter, and five slots for weapons and support items. Firing most weapons costs energy, with more powerful weapons draining more energy. Some more powerful weapons also have their own cooldown timer.</p>
-		<p>Taking damage also drains the player's energy. When the player's energy reaches 0, their ship is destroyed. Energy regenerates over time.</p>
-		<p>In general, the player will be facing one boss at a time. The player's objective is to destroy the boss, which usually means destroying the core the boss is built around. Other parts of the boss may also be destructible. Parts are built off each other in a tree-like structure, and when a part is destroyed, all of its child parts will also be destroyed.</p>
-		<p>The player has a choice of several ship types. Each ship type has different stats and weapon behaviours - for example, the basic Bullet weapon is a long stream of green bullets as most ship types, but a faster, shorter-range stream of yellow bullets when using the Quicker type. The special BulletHell ship type does not use the energy system - firing its weapons is free, but it is destroyed immediately on taking any amount of damage.</p>
-		<p>Bosses have a rank from 1 to 100. This is essentially a difficulty scale, with 1 being the easiest and 100 being the hardest. At higher ranks, bosses will move and fire more quickly.</p>
-		-->
+		<p>It's time for you to fight a real opponent. You can return to the main menu, then choose a boss from the list by selecting "Free Play", then "Select". Or, copy the enemy data below to fight the boss "Double-X".</p>
+		<object class="fed" type="text/plain" data="tut01-double cross.fed"></object>
+		<p>How did you do? Don't be disheartened if you struggled at first - FRAXY is primarily about creating bosses. It's fine if you leave fighting them to other players who have more practice than you do.</p>
+		<p>Now that you understand how the game works, you're ready to start making your own bosses. Click the link below to proceed to the next tutorial.</p>
+		<a href="tut02_basics.html">--> Tutorial 2: Editing Basics</a>
 		<div class="blank"></div>
 	</body>
 </html>
